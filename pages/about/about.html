@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="L2MRail has developed an innovative Wheel Impact Load Detection (F-WILD) system in partnership with RDSO, Indian Railway, Government of India. Our F-WILD system captures the wheel signature as a train moves over the instrumented zone of the track and processes data in real-time. The processed information is stored in secured servers (private cloud) for all authorized persons to view through a customized GUI. Information on the critically damaged wheels is communicated through messages to designated authorities. Our solution enables the Railway companies to monitor the health of all rail wheels that pass over the ‘WILD-zone’ and assists in condition-based maintenance of rolling stock, thereby reducing the maintenance costs while improving the rolling stock life cycle."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mvis.ai - About</title>
+    <link rel="icon" href="../../images/l2mlogo.png" type="image/png" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="../../images/l2mlogo.png" alt="Logo" id="logo" />
+      </div>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="../home/home.html" class="active">Home</a></li>
+          <li><a href="../about/about.html">About FWILD</a></li>
+          <li><a href="../features/features.html">Features</a></li>
+          <li><a href="../downloads/downloads.html">Downloads</a></li>
+          <li><a href="../contact/contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ========== Start Section ========== -->
+    <div class="about">
+      <!-- ========== Start Section ========== -->
+      <div class="high-level-arch">
+        <h1>
+          <q><i>High Level Architecture</i></q>
+        </h1>
+        <div>
+          <img src="../../images/High-Level-Architecture.png" alt="" />
+          <p>
+            The above picture shows various hardware components that are used in
+            MVIS system and their inter-connection.
+          </p>
+        </div>
+      </div>
+      <!-- ========== End Section ========== -->
+
+      <!-- ========== Start Section ========== -->
+      <div class="hardware-overview">
+        <h1>
+          <q><i>Hardware Overview</i></q>
+        </h1>
+        <div class="trigger-fbg-sensor">
+          <h2>Trigger FBG Sensor</h2>
+          <p>
+            Two pairs of FBG sensors are strategically mounted at an appropriate
+            distance ahead of the measurement zone to detect the entry and exit
+            of a train. The trigger's location is determined by the FBG system's
+            design, ensuring sufficient headway time for the system to initiate
+            data acquisition. The sensors are multiplexed in series using
+            ruggedized (armored) fiber cables, and they are terminated in a
+            standard fiber splice protector. These sensors are routed to the
+            junction box, positioned near the WILD zone. The distance from the
+            entry and exit trigger locations to the measurement zone is 30
+            meters.
+          </p>
+          <img src="../../images/fbg-sensor.png" alt="Trigger FBG Sensor" />
+          <p class="trigger-fbg-sensor-alt-text">Trigger FBG Sensor</p>
+        </div>
+        <br /><br />
+
+        <div class="wild-fbg-sensor">
+          <h2>WILD FBG Sensor</h2>
+          <p>
+            The system comprises an array of 16 FBG sensors arranged to ensure
+            100% wheel coverage. These sensors are securely attached to the rail
+            using specially designed packages that can withstand harsh outdoor
+            conditions. The FBG vertical load sensors are mounted beneath the
+            rail using clamps, ensuring they do not interfere with the rail's
+            normal operation. Each sensor is housed in a robust metal protective
+            casing and installed at the midpoint between two sleepers. The
+            armored optical cable is routed from the packaged FBG sensor to the
+            junction box through an HDPE pipe, and from the junction box to the
+            interrogator via a duct cable.
+          </p>
+          <img src="../../images/sensor_fixture.png" alt="Sensor Fixture" />
+          <p class="wild-fbg-sensor-alt-text">Sensor Fixture</p>
+          <img
+            src="../../images/sensor_protective_casing.png"
+            alt="Sensor Protective Casing"
+          />
+          <p class="wild-fbg-sensor-alt-text">Sensor Protective Casing</p>
+          <br /><br />
+          <p>
+            Each FBG sensor is multiplexed in series using ruggedized fiber
+            cables. To monitor the train's left and right wheels, two separate
+            sets of FBG sensors are mounted on the left and right rails of the
+            railway track. The sensors are clearly identifiable, allowing for
+            easy replacement or installation without much hassle. They are
+            terminated in standard fiber junction boxes (FDMS) that meet RDSO
+            specification RDSO/SPN/TC/68/2014, located near the sensing zone.
+            The non-terminated ends of the fiber are then connected to the
+            indoor equipment using ruggedized single-mode fiber cables,
+            compliant with RDSO-approved ITU specification G 652D. The outdoor
+            cables are buried at a suitable depth of 1 foot to avoid
+            interference with any railway operations. The fiber is housed inside
+            HDPE pipes in accordance with RDSO specification RDSO/SN/45/2006. A
+            torque wrench is used to apply uniform tension and load to all bolts
+            of the sensor fixture. It allows for setting a specific torque range
+            for all fasteners. In this case, a torque value of 35 Nm is applied
+            to secure the nuts to the rail. To prevent the bolts from loosening,
+            a Loctite thread locker is used.
+          </p>
+          <br />
+          <video width="400" class="about-video" height="300" controls>
+            <source src="../../videos/L2M-ABOUT.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="interogator">
+          <h2>Interrogator</h2>
+          <p>
+            An interrogator is an opto-electronic instrument used to measure the
+            wavelength of light reflected from optical Fiber Bragg Grating (FBG)
+            sensors in both static and dynamic monitoring applications. It
+            functions by sending light into a fiber and receiving the light
+            reflected back from the FBG sensors. The optical fibers carrying
+            light signals from the FBG sensors are connected to different
+            channels of the interrogator. The reflected light's wavelength is
+            then compared with the central wavelength of the FBG. When a train
+            wheel rolls over the rail section equipped with an FBG sensor, the
+            reflected light's wavelength shifts from its central wavelength.
+            This shift is proportional to the strain on the rail caused by the
+            train wheel. The data collected from the interrogator, corresponding
+            to the wavelength shift, are then transmitted to the FBG Data
+            Processing Unit.
+          </p>
+          <img src="../../images/interrogator.png" alt="Trigger FBG Sensor" />
+          <p class="interrogator-alt-text">Interrogator</p>
+        </div>
+        <br /><br />
+
+        <div class="internet-gateway">
+          <h2>Internet Gateway</h2>
+          <p>
+            An Internet gateway is a network device or software that serves as a
+            connection point between a local network and the broader internet.
+            It acts as a bridge, managing data traffic between the internal
+            network and external networks, allowing devices within a private
+            network to access the internet. Internet gateways can be implemented
+            through hardware devices, such as routers or firewalls, or as
+            software solutions integrated into network systems.
+          </p>
+          <img
+            src="../../images/Internet-Gateway.png"
+            alt="Trigger FBG Sensor"
+          />
+          <p class="internet-gateway-alt-text">Internet Gateway</p>
+        </div>
+        <br /><br />
+      </div>
+
+      <div class="cloud-server-and-power-supply">
+        <h2>Cloud Server</h2>
+        <p>
+          The cloud server is a private server service from Railtel, running on
+          the Ubuntu operating system. The server hosts the F-WILD website and
+          includes a communication module to receive data from one or more DPUs
+          installed at the respective F-WILD sites, as well as a data logging
+          module to store the data received from the DPUs.
+        </p>
+        <br /><br />
+        <h2>Power Supply</h2>
+        <p>
+          The power supply installed inside the location box is a 230V AC to 24V
+          DC converter and functions as an Uninterruptible Power Supply (UPS)
+          for all the equipment, including the DPU, interrogator, and internet
+          gateway. It has the capacity to provide power for up to 8 hours even
+          in the absence of 230V AC power..
+        </p>
+      </div>
+      <br /><br />
+      <!-- ========== End Section ========== -->
+    </div>
+    <!-- ========== End Section ========== -->
+
+    <!-- ========== Start top button Section ========== -->
+    <button id="scrollUpBtn" title="Go to top">
+      <i class="fas fa-angle-double-up"></i>
+    </button>
+    <!-- ========== End top button Section ========== -->
+
+    <!-- ========== Start Section ========== -->
+    <footer>
+      <p>
+        &copy; 2024 fbgwild.ai. Lab to Market Innovations Private Limited. All
+        rights reserved.
+      </p>
+    </footer>
+    <!-- ========== End Section ========== -->
+    <div id="overlay" class="overlay">
+      <div class="spinner">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <script src="about.js"></script>
+  </body>
+</html>
